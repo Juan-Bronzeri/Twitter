@@ -1,0 +1,41 @@
+import React from 'react';
+
+import ProfilePage from '../ProfilePage';
+
+import {
+  Container,
+  Header,
+  BackIcon,
+  ProfileInfo,
+  BottomMenu,
+  HomeIcon,
+  SerchIcon,
+  BellIcon,
+  EmailIcon,
+
+} from './styles';
+
+const Main: React.FC = () => {
+  return (
+    <Container>
+      <Header>
+        <button>
+          <BackIcon />
+        </button>
+        <ProfileInfo>
+          <strong>Juan Dias</strong>
+          <span>999 Tweets</span>
+        </ProfileInfo>
+      </Header>
+      <ProfilePage />
+      <BottomMenu>
+        <HomeIcon />
+        <SerchIcon />
+        <BellIcon />
+        <EmailIcon />
+      </BottomMenu>
+    </Container>
+  );
+}
+
+export default Main;
